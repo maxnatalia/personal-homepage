@@ -22,6 +22,10 @@ export const SwitcherText = styled.span`
     font-size: 12px;
     font-weight: bold;
     margin-right: 12px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+        display: none;
+    }
 `;
 
 export const BoxSwitcher = styled.span`
