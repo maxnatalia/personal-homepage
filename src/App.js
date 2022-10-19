@@ -5,7 +5,6 @@ import { GlobalStyle } from "./GlobalStyle";
 import { theme, darkTheme } from "./theme";
 import PersonalHomepage from "./features/PersonalHomepage";
 import ThemeSwitcher from "./common/ThemeSwitcher";
-import { PageWrapper } from "./PageWrapper";
 import { selectIsDarkTheme } from "./common/ThemeSwitcher/themeSlice";
 
 function App() {
@@ -15,12 +14,9 @@ function App() {
     <ThemeProvider theme={isDarkTheme ? darkTheme : theme}>
       <Normalize />
       <GlobalStyle />
-      <PageWrapper>
         <ThemeSwitcher />
         <PersonalHomepage />
-      </PageWrapper>
     </ThemeProvider>
-
   );
 }
 
