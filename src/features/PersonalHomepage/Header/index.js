@@ -2,7 +2,7 @@ import { Avatar, Container, Wrapper, Caption, Name, Description, ButtonText } fr
 import { ButtonLink } from "../ButtonLink";
 import { ReactComponent as MessageIcon } from "../Header/message.svg";
 import avatar from "../Header/avatar.jpg";
-import {email} from "../../../email";
+import { email } from "../email";
 
 
 const Header = () => {
@@ -13,8 +13,10 @@ const Header = () => {
                 <Wrapper>
                     <Caption>this is</Caption>
                     <Name>Natalia Mazur-Żurek</Name>
-                    <Description>I'm a passionate Frontend Developer in love with React, currently
-                        looking for new job opportunities.</Description>
+                    <Description>
+                        👩💻I'm a passionate Frontend Developer in love with React, currently
+                        looking for new job opportunities.
+                    </Description>
                     <ButtonLink
                         title={email}
                         href={`mailto:${email}`}>
