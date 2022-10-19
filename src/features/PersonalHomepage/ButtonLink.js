@@ -9,18 +9,17 @@ export const ButtonLink = styled.a`
     align-items: center;
     border-radius: 4px;
     cursor: pointer;
-    border: 1px solid  ${({ theme }) => theme.elementColor.buttonHover};
+    border: 1px solid  ${({ theme }) => theme.elementColor.buttonBorder};
     transition: box-shadow 0.3s;
     font-size: 20px;
     text-decoration: none;
     
     &:hover {
-        box-shadow: 2px -2px 0px #8cc2ff, -2px 2px 0px #8cc2ff, 2px 2px 0px #8cc2ff,
-                -2px -2px 0px #8cc2ff;
+        box-shadow: ${({ theme }) => theme.elementColor.buttonHover};
     }
 
     &:active {
-        box-shadow: inset 0px 2px 0px rgba(20, 70, 32, 0.2);
+        box-shadow: ${({ theme }) => theme.elementColor.buttonActive};
     }
 
 `;
