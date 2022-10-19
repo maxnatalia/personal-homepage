@@ -22,7 +22,7 @@ export const Container = styled.div`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         grid-template-columns: 1fr;
-        padding: 10px;
+        padding: 16px;
         grid-gap: 0;
     }
 `;

@@ -5,6 +5,10 @@ export const Wrapper = styled.span`
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
+
+    @media (max-width: ${({theme})=> theme.breakpoints.mobile}px) {
+        margin-right: 17px;
+    }
 `;
 
 export const Button = styled.button`
