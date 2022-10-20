@@ -55,3 +55,7 @@ export const ListItem = styled.li`
 export const Point = styled(PointList)`
     margin-right: 16px;
 `;
+
+export const Icon = styled.img`
+    padding: 0 16px;
+`;

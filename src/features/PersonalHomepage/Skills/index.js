@@ -1,11 +1,12 @@
-import { ListWrapper, ListHeader, ListSkills, ListItem, Point } from "./styled";
+import { ListWrapper, ListHeader, ListSkills, ListItem, Point, Icon } from "./styled";
 
-const Skills = ({ title, list }) => {
+const Skills = ({ title, icon, list }) => {
     return (
         <>
             <ListWrapper>
                 <ListHeader>
                     {title}
+                    <Icon src={icon} alt="" />
                 </ListHeader>
                 <ListSkills>
                     {list.map((item) => (
