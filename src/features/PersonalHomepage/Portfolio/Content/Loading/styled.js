@@ -22,6 +22,7 @@ export const Info = styled.p`
 export const Loader = styled(LoaderIcon)`
     margin-bottom: 140px;
     animation: spin 1s linear infinite;
+    height: auto;
 
     @keyframes spin {
     to {
@@ -31,6 +32,5 @@ export const Loader = styled(LoaderIcon)`
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         width: 86px;
-        height: 86px;
     }
 `;
