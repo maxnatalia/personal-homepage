@@ -12,7 +12,7 @@ export const socialMedia = [
     },
     {
         name: "LinkedIn",
-        link: "",
+        link: "https://www.linkedin.com/in/natalia-mazur-%C5%BCurek-136a35254/",
         Logo: styledLogo(LinkedInLogo),
     }
 ]
