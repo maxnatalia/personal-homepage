@@ -1,19 +1,19 @@
 import { Wrapper, Button, SwitcherText, BoxSwitcher, IconWraper, Icon } from "./styled";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleTheme, selectIsDarkTheme } from "./themeSlice";
+import { toggleTheme, selectDarkTheme } from "./themeSlice";
 
 const ThemeSwitcher = () => {
-    const isDarkTheme = useSelector(selectIsDarkTheme);
+    const darkTheme = useSelector(selectDarkTheme);
     const dispatch = useDispatch();
 
     return (
         <Wrapper>
             <Button onClick={() => dispatch(toggleTheme())}> 
                 <SwitcherText>
-                    Dark mode {isDarkTheme ? "off" : "on" }
+                    Dark mode {darkTheme ? "off" : "on" }
                 </SwitcherText>
                 <BoxSwitcher>
-                    <IconWraper moveToRight={isDarkTheme} >
+                    <IconWraper moveToRight={darkTheme} >
                         <Icon />
                     </IconWraper>
                 </BoxSwitcher>

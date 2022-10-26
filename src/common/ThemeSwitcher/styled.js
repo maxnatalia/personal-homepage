@@ -6,7 +6,7 @@ export const Wrapper = styled.span`
     justify-content: flex-end;
     margin-top: 10px;
 
-    @media (max-width: ${({theme})=> theme.breakpoints.mobile}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         margin-right: 17px;
     }
 `;
@@ -19,6 +19,7 @@ export const Button = styled.button`
     display: flex;
     align-items: center;
     outline-offset: 8px;
+    margin-top: 10px;
 `;
 
 export const SwitcherText = styled.span`
@@ -34,7 +35,7 @@ export const SwitcherText = styled.span`
 
 export const BoxSwitcher = styled.span`
     border-radius: 12px;
-    background: ${({ theme }) => theme.elementColor.boxSwitcher};
+    background: ${({ theme }) => theme.background.boxSwitcher};
     border: 1px solid;
     padding: 3px;
     width: 48px;
@@ -45,7 +46,7 @@ export const IconWraper = styled.span`
     display: flex;
     border-radius: 50%;
     padding: 3px;
-    background: ${({ theme }) => theme.elementColor.iconWrapper};
+    background: ${({ theme }) => theme.background.iconWrapper};
     transition: transform 0.3s;
 
     ${({ moveToRight }) => moveToRight && css`
@@ -54,5 +55,5 @@ export const IconWraper = styled.span`
 `;
 
 export const Icon = styled(SunIcon)`
-    color: ${({ theme }) => theme.elementColor.iconFill};
+    color: ${({ theme }) => theme.background.iconSwitcher};
 `;
