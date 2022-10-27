@@ -1,60 +1,91 @@
 const breakpoints = {
     mobile: 767,
     tablet: 1180,
-  };
+};
 
 const colors = {
-    mercury: "#E5E5E5",
     whiteLilac: "#FBFBFE",
-    slateGray: "#6E7E91",
-    mineShaft: "#252525",
+    mineShaft: "#363636",
     white: "#FFFFFF",
+    semiBlack: "rgba(54, 54, 54, 0.72)",
     scienceBlue: "#0366D6",
-    iron: "#D1D5DA",
     dogerBlue: "#2188FF",
-    blueHover: "rgba(209, 213, 218, 0.3)",
-    semiDark: "rgba(54, 54, 54, 0.72)",
-    gray: "#4C534B",
-    shadowSkills: "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);"
-    
+    slateGray: "#6E7E91",
+    black: "#252525",
+    grayDark: "rgba(209, 213, 218, 0.1)",
+    grayLight: "rgba(209, 213, 218, 0.3)",
+    mercury: "#E5E5E5",
+    boulder: "#757575",
+    blueLight: "rgba(3, 102, 214, 0.2)",
 };
+
+const shadows = {
+    selected: "inset 0px 2px 0px rgba(20, 70, 32, 0.2)",
+    focus: "2px -2px 0px #8CC2FF, -2px 2px 0px #8CC2FF, 2px 2px 0px #8CC2FF, -2px -2px 0px #8CC2FF;",
+    tile: "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);",
+}
 
 export const theme = {
-    elementColor: {
-        background: colors.whiteLilac,
-        text: colors.slateGray,
-        textTitles: colors.mineShaft,
-        buttonBackground: colors.scienceBlue,
-        buttonText: colors.white,
-        boxSwitcher: colors.iron,
-        buttonHover: colors.blueHover,
+
+    background: {
+        body: colors.whiteLilac,
+        tiles: colors.white,
+        button: colors.scienceBlue,
+        boxSwitcher: colors.mercury,
         iconWrapper: colors.slateGray,
-        iconFill: colors.white,
-        borderBottom: colors.iron,
-        backgroundSkills: colors.white,
-        boxShadowSkills: colors.shadowSkills,
+        iconSwitcher: colors.white,
     },
+
+    text: colors.slateGray,
+    textButton: colors.white,
+    titles: colors.black,
+    titlesPortfolio: colors.scienceBlue,
+    links: colors.scienceBlue,
+    linkFooter: colors.black,
+    iconPortfolio: colors.scienceBlue,
+    icons: colors.black,
+    borderTiles: colors.grayLight,
+    borderHoverTiles: colors.blueLight,
+    borderLinks: colors.scienceBlue,
+    borderButton: colors.grayLight,
+    hoverButton: shadows.focus,
+    activeButton: shadows.selected,
+    hover: colors.scienceBlue,
+    hoverTile: shadows.tile,
 
     colors,
     breakpoints,
-};
+    shadows,
+}
 
 export const darkTheme = {
-    elementColor: {
-        background: colors.mineShaft,
-        text: colors.white,
-        textTitles: colors.white,
-        buttonBackground: colors.dogerBlue,
-        buttonText: colors.white,
-        boxSwitcher: colors.gray,
-        buttonHover: colors.blueHover,
+    background: {
+        body: colors.black,
+        tiles: colors.semiBlack,
+        button: colors.dogerBlue,
+        boxSwitcher: colors.boulder,
         iconWrapper: colors.white,
-        iconFill: colors.mineShaft,
-        borderBottom: colors.iron,
-        backgroundSkills: colors.semiDark,
-        boxShadowSkills: colors.shadowSkills,
+        iconSwitcher: colors.black,
     },
+
+    text: colors.white,
+    textButton: colors.white,
+    titles: colors.white,
+    titlesPortfolio: colors.dogerBlue,
+    links: colors.dogerBlue,
+    linkFooter: colors.white,
+    iconPortfolio: colors.dogerBlue,
+    icons: colors.white,
+    borderTiles: colors.grayDark,
+    borderHoverTiles: colors.blueLight,
+    borderLinks: colors.dogerBlue,
+    borderButton: colors.grayDark,
+    hoverButton: shadows.focus,
+    activeButton: shadows.selected,
+    hover: colors.dogerBlue,
+    hoverTile: shadows.tile,
 
     colors,
     breakpoints,
+    shadows,
 };

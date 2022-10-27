@@ -5,17 +5,17 @@ import { GlobalStyle } from "./GlobalStyle";
 import { theme, darkTheme } from "./theme";
 import PersonalHomepage from "./features/PersonalHomepage";
 import ThemeSwitcher from "./common/ThemeSwitcher";
-import { selectIsDarkTheme } from "./common/ThemeSwitcher/themeSlice";
+import { selectDarkTheme } from "./common/ThemeSwitcher/themeSlice";
 
 function App() {
-  const isDarkTheme = useSelector(selectIsDarkTheme);
+  const isdarkTheme = useSelector(selectDarkTheme);
 
   return (
-    <ThemeProvider theme={isDarkTheme ? darkTheme : theme}>
+    <ThemeProvider theme={isdarkTheme ? darkTheme : theme}>
       <Normalize />
       <GlobalStyle />
-        <ThemeSwitcher />
-        <PersonalHomepage />
+      <ThemeSwitcher />
+      <PersonalHomepage />
     </ThemeProvider>
   );
 }
