@@ -15,7 +15,7 @@ export const Wrapper = styled.section`
 
 export const Icon = styled(GitHubIcon)`
     & path {
-        fill: ${({ theme }) => theme.elementColor.logo};
+        fill: ${({ theme }) => theme.iconPortfolio};
     } 
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
@@ -24,7 +24,7 @@ export const Icon = styled(GitHubIcon)`
     }
 `;
 export const Header = styled.h2`
-    color: ${({ theme }) => theme.elementColor.textTitles};
+    color: ${({ theme }) => theme.titles};
     font-size: 30px;
     font-weight: 900;
 
@@ -36,7 +36,6 @@ export const Header = styled.h2`
 export const Title = styled.h3`
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: 0.05em;
     margin: 0;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
@@ -44,7 +43,4 @@ export const Title = styled.h3`
     }
 `;
 
-export const Content = styled.div`
-
-`;
 
