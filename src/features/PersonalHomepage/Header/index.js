@@ -1,16 +1,15 @@
-import { Avatar, Container, Wrapper, Caption, Name, Description, ButtonText } from "./styled";
-import { ButtonLink } from "../ButtonLink";
+import { Avatar, Container, Caption, Name, Description, ButtonText } from "./styled";
+import { ButtonLink } from "../ButtonLink/ButtonLink";
 import { ReactComponent as MessageIcon } from "../Header/message.svg";
 import avatar from "../Header/avatar.jpg";
 import { email } from "../email";
-
 
 const Header = () => {
     return (
         <>
             <Container>
                 <Avatar src={avatar} alt="Natalia Mazur-Żurek" />
-                <Wrapper>
+                <div>
                     <Caption>this is</Caption>
                     <Name>Natalia Mazur-Żurek</Name>
                     <Description>
@@ -23,7 +22,7 @@ const Header = () => {
                         <MessageIcon />
                         <ButtonText>Hire Me</ButtonText>
                     </ButtonLink>
-                </Wrapper>
+                </div>
             </Container>
         </>
     )
