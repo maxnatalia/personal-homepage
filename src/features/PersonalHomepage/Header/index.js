@@ -13,8 +13,8 @@ const Header = () => {
                     <Caption>this is</Caption>
                     <Name>Natalia Mazur-Żurek</Name>
                     <Description>
-                        👩💻I'm a passionate Frontend Developer in love with React, currently
-                        looking for new job opportunities.
+                        👩💻I’m an enthusiastic Frontend Developer in friendship with React, 
+                        currently looking for new job opportunities and challenges.
                     </Description>
                     <ButtonLink
                         title={email}

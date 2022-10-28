@@ -9,9 +9,10 @@ const Footer = () => {
             <Address>
                 <Mail href={`mailto:${email}`}>{email}</Mail>
                 <Paragraph>
-                    I’m always open to new projects whenever I have the time.
-                    If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life,
-                    feel free to conatct me
+                I'm looking forward to improving and learning new skills at FrontEnd. 
+                If you want to give me a chance to demonstrate my knowledge and hire me, 
+                please contact me by e-mail or other way. 
+                I'm gladly waiting for any challenges and jobs opportunities.
                 </Paragraph>
                 <LogosContainer>
                     {socialMedia.map(({ name, link, Logo }) => (
