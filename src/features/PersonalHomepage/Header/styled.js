@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Avatar = styled.img`
     width: 30vw;
     max-width: 384px;
-    aspect-ratio: 1/1;
     border-radius: 50%;
     margin-top: -30px; // that's height of the theme switcher
 
