@@ -16,12 +16,21 @@ The purpose of creating this project was to improve my programming skills and sh
 
 ### 📎Features
 - Switching between light and dark theme.
-![themeLight](./themeLight.jpg)![themeDark](./themeDark.jpg)
+
+![themeLight](./themeLight.jpg)
+
+![themeDark](./themeDark.jpg)
+
 - Downloading projects directly from my GitHub
+
 ![portfolio](./portfolio.jpg)
+
 - Loading animation while downloading data
+
 ![loading](./loading.jpg)
+
 - Error handled
+
 ![errorHandle](./error.jpg)
 
 ## 🛠Used technologies:
