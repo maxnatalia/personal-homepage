@@ -1,12 +1,10 @@
 # 📁Personal Homepage - Natalia Mazur-Żurek
 
-This is my Personal Homepage - a portfolio of my recent projects. 
+This is my Personal Homepage - portfolio of my recent projects. 
 ## 📌Demo:
 Feel free to see it!👁‍🗨
 
 [Personal Homepage - Natalia Mazur-Żurek](https://maxnatalia.github.io/personal-homepage/) 
-
-## 👁‍🗨Web Preview:
 
 ## 📌General Information
 
@@ -18,13 +16,13 @@ The purpose of creating this project was to improve my programming skills and sh
 
 ### 📎Features
 - Switching between light and dark theme.
-
+![themeLight](./themeLight.jpg)![themeDark](./themeDark.jpg)
 - Downloading projects directly from my GitHub
-
+![portfolio](./portfolio.jpg)
 - Loading animation while downloading data
-
+![loading](./loading.jpg)
 - Error handled
-
+![errorHandle](./error.jpg)
 
 ## 🛠Used technologies:
 - [x] HTML
@@ -34,7 +32,7 @@ The purpose of creating this project was to improve my programming skills and sh
 - [x] React
 - [x] React hooks
 - [x] Redux
-- [x] Styled-compontents
+- [x] Styled-components
 - [x] Visual project from Figma
 - [x] Downloading data from API
 ## Available Scripts
