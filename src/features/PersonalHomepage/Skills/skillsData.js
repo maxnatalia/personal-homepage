@@ -19,6 +19,7 @@ export const skillsData = [
             "React",
             "React Hooks",
             "React Router",
+            "React Query",
             "Styled-Components",
             "Redux (Toolkit)",
             "Redux-Saga",
