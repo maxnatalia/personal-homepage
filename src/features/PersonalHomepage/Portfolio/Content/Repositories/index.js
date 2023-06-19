@@ -5,26 +5,27 @@ const Repositories = ({ repositories }) => {
     return (
         <List>
             {repositories.map(({ id, name, description, homepage, html_url }) => (
-                <Tile key={id}>
-                    <Name>{name.toUpperCase()}</Name>
-                    <Description>{description}</Description>
-                    <Links>
-                        {!!homepage && (
+                name !== "maxnatalia" && (
+                    <Tile key={id}>
+                        <Name>{name.toUpperCase()}</Name>
+                        <Description>{description}</Description>
+                        <Links>
+                            {!!homepage && (
+                                <LinksRow>
+                                    <dt>Demo:</dt>
+                                    <LinksValue>
+                                        <Link target="_blank" rel="noreferrer" href={homepage}>{homepage}</Link>
+                                    </LinksValue>
+                                </LinksRow>
+                            )}
                             <LinksRow>
-                                <dt>Demo:</dt>
+                                <dt>Code:</dt>
                                 <LinksValue>
-                                    <Link target="_blank" rel="noreferrer" href={homepage}>{homepage}</Link>
+                                    <Link target="_blank" rel="noreferrer" href={html_url}>{html_url}</Link>
                                 </LinksValue>
                             </LinksRow>
-                        )}
-                        <LinksRow>
-                            <dt>Code:</dt>
-                            <LinksValue>
-                                <Link target="_blank" rel="noreferrer" href={html_url}>{html_url}</Link>
-                            </LinksValue>
-                        </LinksRow>
-                    </Links>
-                </Tile>
+                        </Links>
+                    </Tile>)
             ))}
         </List>
     )
