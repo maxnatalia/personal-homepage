@@ -35,7 +35,7 @@ export const ListSkills = styled.ul`
     @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         grid-template-columns: 1fr;
     }
@@ -57,5 +57,5 @@ export const Point = styled(PointList)`
 `;
 
 export const Icon = styled.img`
-    padding: 0 16px;
+    padding: 0 8px;
 `;
