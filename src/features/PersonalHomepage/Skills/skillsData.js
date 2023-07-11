@@ -24,16 +24,18 @@ export const skillsData = [
             "React Query",
             "Styled-Components",
             "Material UI",
+            "Tailwind",
             "Redux (Toolkit)",
             "Redux-Saga",
             "Working with API (fetch, axios)",
             "Error handling",
             "NPM",
+            "Vite",
             "Git",
             "GitHub Pull Requests & Reviews",
             "Teamwork",
             "Scrum",
-            "Trello",
+            "Trello"
         ],
     },
     {
@@ -42,6 +44,7 @@ export const skillsData = [
         list: [
             "Further develop acquired skills",
             "Software testing",
+            "Next.js",
             "Node.js and Express",
             "MongoDB and MySQL databases",
         ],
