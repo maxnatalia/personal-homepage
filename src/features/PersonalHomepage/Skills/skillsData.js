@@ -11,6 +11,7 @@ export const skillsData = [
             "CSS Flexbox",
             "CSS Grid",
             "CSS animations",
+            "Framer Motion",
             "Responsive Web Design",
             "SASS",
             "Markdown",
